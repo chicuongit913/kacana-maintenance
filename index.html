@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <title>Kacana – Taking a Break</title>
+    <meta name="description" content="Kacana is currently paused for updates. We'll be back soon with an even better experience!">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;500;600;700&display=swap');
+
+        :root {
+            --bg: #ffffff;
+            --text: #2d3436;
+            --accent: #ff6b6b;
+            --light: #f8f9fa;
+            --gradient: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+        }
+
+        * { margin:0; padding:0; box-sizing:border-box; }
+
+        body {
+            font-family: 'Inter', system-ui, sans-serif;
+            background: var(--gradient);
+            color: var(--text);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            line-height: 1.6;
+        }
+
+        .container {
+            background: rgba(255,255,255,0.95);
+            backdrop-filter: blur(12px);
+            border-radius: 24px;
+            padding: 70px 40px;
+            max-width: 680px;
+            width: 100%;
+            text-align: center;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+            animation: fadeIn 1s ease-out;
+        }
+
+        .logo {
+            font-size: 4.8rem;
+            font-weight: 700;
+            letter-spacing: -2px;
+            color: var(--accent);
+            margin-bottom: 30px;
+        }
+
+        .illustration {
+            width: 220px;
+            height: auto;
+            margin: 30px auto 40px;
+        }
+
+        h1 {
+            font-size: 2.8rem;
+            font-weight: 600;
+            margin-bottom: 24px;
+            color: var(--text);
+        }
+
+        p {
+            font-size: 1.25rem;
+            color: #636e72;
+            margin-bottom: 40px;
+        }
+
+        .footer {
+            font-size: 1.1rem;
+            color: var(--accent);
+            font-weight: 500;
+        }
+
+        @keyframes fadeIn {
+            from { opacity:0; transform:translateY(30px); }
+            to   { opacity:1; transform:translateY(0); }
+        }
+
+        @media (max-width: 600px) {
+            .container { padding: 50px 25px; }
+            .logo { font-size: 3.8rem; }
+            .illustration { width: 180px; }
+            h1 { font-size: 2.3rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="logo">KACANA</div>
+
+        <!-- The illustration (plug almost connecting) -->
+        <svg class="illustration" viewBox="0 0 240 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M80 100 L60 120 L80 140" stroke="#ff6b6b" stroke-width="16" stroke-linecap="round"/>
+            <path d="M160 100 L180 120 L160 140" stroke="#ff6b6b" stroke-width="16" stroke-linecap="round"/>
+            <circle cx="60" cy="120" r="14" fill="#ff6b6b"/>
+            <circle cx="180" cy="120" r="14" fill="#ff6b6b"/>
+            <rect x="52" y="110" width="16" height="20" rx="8" fill="#ff6b6b"/>
+            <rect x="172" y="110" width="16" height="20" rx="8" fill="#ff6b6b"/>
+            <path d="M120 40 L100 80 L140 80 Z" fill="#74c0fc"/>
+            <path d="M120 40 L90 100 L150 100 Z" fill="#4a90e2"/>
+            <text x="120" y="135" text-anchor="middle" font-size="28" font-weight="bold" fill="#74c0fc">K</text>
+        </svg>
+
+        <h1>We're Taking a Break</h1>
+
+        <p>
+            Kacana is currently not operating.<br>
+            We’re pausing services for maintenance and updates.<br>
+            We’ll be back soon—better than ever!
+        </p>
+
+        <div class="footer">Thank you for your support.</div>
+    </div>
+
+</body>
+</html>
